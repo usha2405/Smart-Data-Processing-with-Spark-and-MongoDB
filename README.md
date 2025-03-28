@@ -1,15 +1,74 @@
-# Project-Big-Data-Concepts-I535-Course-Project.ipynb
-Introduction
-There is a growing shift noticed towards sustainable transportation solutions. Electric vehicles (EVs), which offer significant reduction in greenhouse gas emission and are at the forefront of the transition. From the below chart we can see that the growth of EV has been exponentially growing since 2017. 
+# Smart Data Processing with Spark & MongoDB
 
-Data Dictionary
-Date (string): The date on which the data was recorded.
-County (string): The county where the data was collected.
-State (string): The state in which the county is located.
-Vehicle Primary Use (string):  The primary use of the vehicle, such as commercial or personal use.
-Battery Electric Vehicles (BEVs) (integer):  The number of battery electric vehicles, which are fully electric vehicles. 
-Plug-In Hybrid Electric Vehicles (PHEVs) (integer): The number of plug-in hybrid electric vehicles, which can operate on both fuel and electric power.
-Electric Vehicle (EV) Total (integer): The total number of electric vehicles, including both BEVs and PHEVs.
-Non-Electric Vehicle Total (integer): The total number of non-electric vehicles.
-Total Vehicles (integer): The total number of vehicles, combining both electric and non-electric vehicles.
-Percent Electric Vehicles (double): The percentage of electric vehicles out of the total number of vehicles.
+## Project Summary
+
+This project demonstrates an end-to-end big data analytics pipeline using **Apache Spark (PySpark)** and **MongoDB**. It focuses on scalable data exploration, processing, and querying for large datasets using distributed computing and NoSQL databases.
+
+## Table of Contents
+
+- [Project Summary](#project-summary)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Dataset Overview](#dataset-overview)
+- [Key Components](#key-components)
+- [Features](#features)
+- [Results](#results)
+- [Usage](#usage)
+- [Contributors](#contributors)
+
+## Tech Stack
+
+- Python
+- PySpark
+- Apache Spark
+- MongoDB
+- Jupyter Notebooks
+- Pandas (for auxiliary processing)
+
+## Installation
+
+1. Install Apache Spark and PySpark.
+2. Set up MongoDB locally or use a cloud instance.
+3. Install dependencies:
+   ```bash
+   pip install pyspark pymongo pandas
+   ```
+4. Open and run the notebooks using Jupyter or VSCode.
+
+## Dataset Overview
+
+The dataset contains structured data suited for big data processing (e.g., transaction records, customer details, or sales). It is loaded into both Spark and MongoDB for scalable analysis.
+
+## Key Components
+
+- `Pyspark_EDA.ipynb`: 
+  - Data loading and cleaning with Spark DataFrames
+  - Exploratory Data Analysis (EDA) using PySpark
+  - Statistical summaries and trend identification
+- `Mongodb.ipynb`: 
+  - MongoDB connection and CRUD operations
+  - Querying and indexing data
+  - Aggregation pipelines for analytics
+
+## Features
+
+- Distributed data wrangling using PySpark
+- NoSQL data modeling and aggregation with MongoDB
+- EDA at scale on large datasets
+- Schema inference, filtering, and transformation
+- Visualization-ready statistics from processed data
+
+## Results
+
+- Efficient handling of large datasets with parallel processing
+- Queried large volumes using MongoDB's aggregation framework
+- Identified key insights using PySpark's analytical capabilities
+
+## Usage
+
+Run each notebook sequentially after setting up your environment. Ensure MongoDB is running if executing the MongoDB notebook.
+
+## Contributors
+
+- Usha Jain
+
